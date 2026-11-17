@@ -6,6 +6,10 @@ use App\Core\{View,
     Router,
     Request};
 use App\Controller\{HomeController,
+    StudioController,
+    ContactController,
+    DevlogController,
+    GameController
 };
 use App\Model\UserRepository;
 
@@ -23,6 +27,10 @@ $view = new View($root . '/views', ['loggedUser' => $_SESSION['user'] ?? null]);
 
 $craft = [
     HomeController::class     => fn() => new HomeController($view),
+    StudioController::class => fn() => new StudioController($view),
+    ContactController::class => fn() => new ContactController($view),
+    DevlogController::class => fn() => new DevlogController($view),
+    GameController::class => fn() => new GameController($view),
 ];
 
 $router = new Router(require $root . '/app/Core/config/routes.php', $view, $craft);
