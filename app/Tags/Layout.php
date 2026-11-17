@@ -24,11 +24,11 @@ final class Layout extends Component
                     ], ''),
                     new Container('ul', [
                         new Container('li',[
-                            new Hypertext('/', ['Studio'])]),
+                            new Hypertext('/studio', ['Studio'])]),
                         new Container('li',[
-                            new Hypertext('/', ['Jeux'])]),
+                            new Hypertext('/game', ['Jeux'])]),
                         new Container('li',[
-                            new Hypertext('/', ['Devlog'])])
+                            new Hypertext('/devlog', ['Devlog'])])
                     ], '')])]);
 
         $footer = $this->renderAll([new Container('footer',
@@ -36,7 +36,7 @@ final class Layout extends Component
                     new Container('li',[
                         new Hypertext('/',['Accueil'])]),
                     new Container('li',[
-                        new Hypertext('/',['Contact'])])
+                        new Hypertext('/contact',['Contact'])])
                 ])],
                 'footer')]);
         $links = $this->renderAll([new Link ('icon', '/res/image/logoMathAi.ico','type="image/x-icon"'),new Link ('stylesheet', '/res/css/style.css')]);
