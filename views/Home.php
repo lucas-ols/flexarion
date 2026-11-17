@@ -5,7 +5,7 @@ use App\Tags\{Alert,Button,Form,Input,Layout,Link,Hypertext,Paragraph,Title,Cont
  * @param array $loggedUser
  */
 
-echo (new Layout('MathAi',isset($loggedUser),[
+echo (new Layout('Flexarion',isset($loggedUser),[
 isset($loggedUser) ? new Title(
         3,['Bonjour, ' . $loggedUser['email']]) : '',
     new Container('div',[ new Title(
