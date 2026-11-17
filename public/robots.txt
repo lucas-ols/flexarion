@@ -1,0 +1,4 @@
+User-agent: * 
+Allow: /
+
+Sitemap: https://mathai.alwaysdata.net/sitemap.xml
